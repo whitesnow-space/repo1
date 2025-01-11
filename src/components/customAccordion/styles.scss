@@ -1,0 +1,51 @@
+@import "../../styles/variables.scss";
+
+.customAccordion {
+  font-family: $primary-font-family;
+  color: $customAccordion-color;
+
+  &-title {
+    padding: $customAccordion-title-padding;
+    color: $customAccordion-color;
+
+    &-text {
+      font-size: $customAccordion-font-size;
+      font-weight: 700;
+    }
+  }
+
+  //priceList
+  &-priceList {
+    overflow: hidden;
+
+    &-title {
+      padding: 10px 0;
+    }
+
+    &-item {
+      border-top: $customAccordion-list-border;
+      padding: 10px 0;
+    }
+  }
+
+  //careList {
+  &-careList {
+    color: $customAccordion-color;
+    font-weight: 700;
+
+    &-link {
+      text-decoration: none;
+    }
+  }
+}
+
+//overlay bootstrap
+
+.accordion-button:not(.collapsed) {
+  background-color: $customAccordion-bg-color;
+  color: $customAccordion-color;
+}
+
+.accordion-button:focus {
+  box-shadow: unset;
+}
