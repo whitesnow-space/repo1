@@ -7,8 +7,6 @@
   width: 100%;
   padding: $button-padding;
   border-radius: $button-border-radius;
-  border: $button-border;
-  color: $button-color;
 
   &-placeholder {
     margin-right: $button-placehoder-margin-right;
@@ -21,6 +19,8 @@
 
   &-darkpurple {
     background-color: $button-bg-color;
+    border: $button-border;
+    color: $button-color;
 
     &:hover {
       background-color: $button-bg-hover;
@@ -29,6 +29,7 @@
 
   &-white {
     background-color: $button-bg-white-color;
+    border: $button-lightpurple-border;
     color: $button-black-color;
 
     &:hover {
