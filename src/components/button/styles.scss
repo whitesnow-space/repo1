@@ -1,0 +1,38 @@
+@import "../../styles/variables.scss";
+
+.button {
+  display: flex;
+  justify-content: center;
+  font-family: $button-font-family;
+  width: 100%;
+  padding: $button-padding;
+  border-radius: $button-border-radius;
+  border: $button-border;
+  color: $button-color;
+
+  &-placeholder {
+    margin-right: $button-placehoder-margin-right;
+    font-size: $button-font-size;
+  }
+
+  &:hover {
+    transition: all 0.2s;
+  }
+
+  &-darkpurple {
+    background-color: $button-bg-color;
+
+    &:hover {
+      background-color: $button-bg-hover;
+    }
+  }
+
+  &-white {
+    background-color: $button-bg-white-color;
+    color: $button-black-color;
+
+    &:hover {
+      background-color: $button-bg-pink-hover;
+    }
+  }
+}
