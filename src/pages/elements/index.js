@@ -2,9 +2,10 @@ import React from "react";
 
 import Button from "../../components/button";
 import CustomAccordion from "../../components/customAccordion";
-import "./styles.scss";
 import TextPanel from "../../components/textPanel";
 import CopyClipboard from "../../components/copyClipboard";
+import CustomImage from "../../components/customImage";
+import "./styles.scss";
 
 const ElementsPage = () => {
   /* Static Data */
@@ -16,6 +17,7 @@ const ElementsPage = () => {
       { title: "title-2", price: "KP-2" },
       { title: "title-3", price: "KP-3" },
     ],
+    imgUrl: "assets/images/img1.jpg",
   };
 
   return (
@@ -50,6 +52,9 @@ const ElementsPage = () => {
 
       <p>CopyClipboard</p>
       <CopyClipboard placeholder="beforeCopy" type="general" />
+
+      <p>customImage</p>
+      <CustomImage imgUrl={staticData.imgUrl} />
     </div>
   );
 };
