@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 import CustomAccordionPriceList from "./accordionPriceList";
 import CustomAccordionCareList from "./accordionCareList";
-import { ICONS } from "../../consts";
+import { ICONS } from "../../../consts";
 import "./styles.scss";
 
 const CustomAccordion = ({

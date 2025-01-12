@@ -1,10 +1,10 @@
 import React from "react";
 
-import Button from "../../components/button";
-import CustomAccordion from "../../components/customAccordion";
-import TextPanel from "../../components/textPanel";
-import CopyClipboard from "../../components/copyClipboard";
-import CustomImage from "../../components/customImage";
+import Button from "../../components/common/button";
+import CustomAccordion from "../../components/common/customAccordion";
+import TextPanel from "../../components/common/textPanel";
+import CopyClipboard from "../../components/common/copyClipboard";
+import CustomImage from "../../components/common/customImage";
 import "./styles.scss";
 
 const ElementsPage = () => {
