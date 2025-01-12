@@ -3,6 +3,7 @@ import React from "react";
 import Button from "../../components/button";
 import CustomAccordion from "../../components/customAccordion";
 import "./styles.scss";
+import TextPanel from "../../components/textPanel";
 
 const ElementsPage = () => {
   /* Static Data */
@@ -36,6 +37,14 @@ const ElementsPage = () => {
         title="Additional Services"
         isAdditional={true}
         list={staticData.list}
+      />
+
+      <p>TextPanel</p>
+      <TextPanel
+        type="tire"
+        title="Tire Change"
+        price={1023}
+        description={staticData.description}
       />
     </div>
   );
