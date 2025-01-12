@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 import Button from "../button";
 import { ICONS } from "../../../consts";
@@ -31,6 +32,13 @@ const TextPanel = ({ type, title, price, description }) => {
       </div>
     </div>
   );
+};
+
+TextPanel.propTypes = {
+  type: PropTypes.string,
+  title: PropTypes.string,
+  price: PropTypes.number,
+  description: PropTypes.string,
 };
 
 export default TextPanel;
