@@ -1,0 +1,17 @@
+@import "../../styles/variables.scss";
+
+.textPanel {
+  font-family: $primary-font-family;
+  background-color: white;
+  color: $darkpurple;
+  border-radius: 10px;
+  padding: 20px;
+
+  &-header {
+    padding-bottom: 20px;
+  }
+
+  &-title {
+    font-weight: 700;
+  }
+}
