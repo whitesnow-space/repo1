@@ -4,6 +4,7 @@ import Button from "../../components/button";
 import CustomAccordion from "../../components/customAccordion";
 import "./styles.scss";
 import TextPanel from "../../components/textPanel";
+import CopyClipboard from "../../components/copyClipboard";
 
 const ElementsPage = () => {
   /* Static Data */
@@ -46,6 +47,9 @@ const ElementsPage = () => {
         price={1023}
         description={staticData.description}
       />
+
+      <p>CopyClipboard</p>
+      <CopyClipboard placeholder="beforeCopy" type="general" />
     </div>
   );
 };
