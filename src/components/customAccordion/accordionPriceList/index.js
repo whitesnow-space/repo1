@@ -9,9 +9,9 @@ const CustomAccordionPriceList = ({ priceList }) => {
         <div className="col-3 col-sm-2">Price</div>
       </div>
       {priceList &&
-        priceList.map((item) => {
+        priceList.map((item, index) => {
           return (
-            <div className="customAccordion-priceList-item row">
+            <div className="customAccordion-priceList-item row" key={index}>
               <div className="col-5 col-sm-7">
                 <span>{item.title}</span>
               </div>
