@@ -4,32 +4,26 @@ import PropTypes from "prop-types";
 
 import CustomAccordionPriceList from "./accordionPriceList";
 import CustomAccordionCareList from "./accordionCareList";
+import { ICONS } from "../../consts";
 import "./styles.scss";
 
 const CustomAccordion = ({
   type,
   title,
   price,
-  description,
   isAdditional = false,
   list,
 }) => {
-  const ICON = {
-    tire: "assets/images/tire.svg",
-    care: "assets/images/care.svg",
-    star: "assets/images/star.svg",
-  };
-
   return (
     <div className="customAccordion">
       <Accordion>
         <Accordion.Item eventKey="0">
           <Accordion.Header>
             <div className="d-flex">
-              <img src={ICON[type]} alt="accordion-img" />
+              <img src={ICONS[type]} alt="accordion-img" />
               <div className="d-flex flex-column justify-content-center customAccordion-title">
                 <span className="customAccordion-title-text">{title}</span>
-                {!isAdditional && <span>{price}-</span>}
+                {!isAdditional && <span>From {price},-</span>}
               </div>
             </div>
           </Accordion.Header>

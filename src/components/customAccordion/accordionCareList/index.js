@@ -7,9 +7,9 @@ const CustomAccordionCareList = () => {
   return (
     <div className="customAccordion-careList">
       <div className="row justify-content-between">
-        <div className="col-3 col-sm-6">Service</div>
-        <div className="col-3 col-sm-3">Small/Medium</div>
-        <div className="col-3 col-sm-3 text-end">Large/SUV</div>
+        <div className="col-4 col-sm-6">Service</div>
+        <div className="col-4 col-sm-3">Small/Medium</div>
+        <div className="col-4 col-sm-3 text-end">Large/SUV</div>
       </div>
       <div className="w-50 mx-auto my-5">
         <Link className="customAccordion-careList-link">
