@@ -1,0 +1,17 @@
+@import "../../styles/variables.scss";
+
+.landingPage {
+  padding: 0;
+
+  &-welcome {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .landingPage {
+    &-welcome {
+      padding: 50px;
+    }
+  }
+}

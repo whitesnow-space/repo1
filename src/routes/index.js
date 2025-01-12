@@ -1,8 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import IndexPage from "../pages";
 import ElementsPage from "../pages/elements";
+import landingPage from "../pages/landingPage";
 
 const ROUTES = [
   {
@@ -10,13 +10,12 @@ const ROUTES = [
     path: "/elements",
   },
   {
-    Component: IndexPage,
+    Component: landingPage,
     path: "/",
   },
 ];
 
 const CustomRoutes = () => {
-  console.log("routes");
   return (
     <Routes>
       {ROUTES.map((route) => {
