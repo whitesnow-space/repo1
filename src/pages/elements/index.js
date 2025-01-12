@@ -1,10 +1,11 @@
 import React from "react";
 
-import Button from "../../components/common/button";
-import CustomAccordion from "../../components/common/customAccordion";
-import TextPanel from "../../components/common/textPanel";
-import CopyClipboard from "../../components/common/copyClipboard";
-import CustomImage from "../../components/common/customImage";
+import Button from "../../components/elements/button";
+import CustomAccordion from "../../components/elements/customAccordion";
+import TextPanel from "../../components/elements/textPanel";
+import CopyClipboard from "../../components/elements/copyClipboard";
+import CustomImage from "../../components/elements/customImage";
+import CustomNavbar from "../../components/custom/Navbar";
 import "./styles.scss";
 
 const ElementsPage = () => {
@@ -23,6 +24,9 @@ const ElementsPage = () => {
   return (
     <div className="elementsPage">
       <h3>Welcome to ElementsPage</h3>
+      <p>Navbar</p>
+      <CustomNavbar />
+
       <p>button</p>
       <Button placeholder={"Darkpurple"} color={"darkpurple"} withIcon={true} />
       <Button placeholder={"White"} color={"white"} />
