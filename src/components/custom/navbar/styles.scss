@@ -3,7 +3,7 @@
 .customNavbar {
   position: fixed;
   z-index: 10;
-  margin: $customNavbar-margin;
+  margin-top: $customNavbar-margin-top;
   padding: $customNavbar-padding;
   border-radius: $customNavbar-border-radius;
   font-family: $primary-font-family;
@@ -17,10 +17,15 @@
     &-item {
       margin: $customNavbar-item-margin;
 
-      &:hover {
+      &:hover,
+      &:active {
         color: $customNavbar-item-hover-color;
       }
     }
+  }
+
+  .nav-link.active {
+    color: $customNavbar-item-hover-color;
   }
 
   &-button {
