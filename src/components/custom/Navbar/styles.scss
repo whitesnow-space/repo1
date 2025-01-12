@@ -1,0 +1,29 @@
+@import "../../../styles/variables.scss";
+
+.customNavbar {
+  position: fixed;
+  z-index: 10;
+  margin: $customNavbar-margin;
+  padding: $customNavbar-padding;
+  border-radius: $customNavbar-border-radius;
+  font-family: $primary-font-family;
+  background-color: $customNavbar-bg-color;
+
+  &-logo {
+    width: $customNavbar-logo-width;
+  }
+
+  &-list {
+    &-item {
+      margin: $customNavbar-item-margin;
+
+      &:hover {
+        color: $customNavbar-item-hover-color;
+      }
+    }
+  }
+
+  &-button {
+    width: $customNavbar-button-width;
+  }
+}
