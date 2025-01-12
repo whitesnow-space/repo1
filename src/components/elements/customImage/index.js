@@ -2,7 +2,7 @@ import React from "react";
 
 import "./styles.scss";
 
-const customImage = ({ imgUrl }) => {
+const CustomImage = ({ imgUrl }) => {
   return (
     <>
       <img className="customImage" src={imgUrl} alt="customImage" />
@@ -10,4 +10,4 @@ const customImage = ({ imgUrl }) => {
   );
 };
 
-export default customImage;
+export default CustomImage;
