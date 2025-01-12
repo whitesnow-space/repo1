@@ -5,7 +5,7 @@ import CustomAccordion from "../../components/elements/customAccordion";
 import TextPanel from "../../components/elements/textPanel";
 import CopyClipboard from "../../components/elements/copyClipboard";
 import CustomImage from "../../components/elements/customImage";
-import CustomNavbar from "../../components/custom/Navbar";
+import CustomNavbar from "../../components/custom/navbar";
 import "./styles.scss";
 
 const ElementsPage = () => {
