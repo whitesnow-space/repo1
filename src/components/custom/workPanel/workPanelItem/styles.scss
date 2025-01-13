@@ -1,0 +1,28 @@
+@import "../../../../styles/variables.scss";
+
+.workPanelItem {
+  &-panel {
+    height: $workPanelItem-height;
+  }
+
+  &-number {
+    color: $white;
+    font-size: $workPanelItem-number-fontSize;
+    font-weight: bold;
+
+    &-panel {
+      width: $workPanelItem-number-panelWidth;
+      height: $workPanelItem-number-panelHeight;
+      margin-right: $workPanelItem-number-marginRight;
+      border-radius: $workPanelItem-number-borderRadius;
+      background-color: $darkpurple;
+      border: 2px solid $purple;
+    }
+  }
+
+  &-text {
+    padding: $workPanelItem-text-padding;
+    font-size: $workPanelItem-text-fontSize;
+    font-weight: 700;
+  }
+}

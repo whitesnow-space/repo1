@@ -40,6 +40,7 @@ $border-none: 0px solid;
 $radius-sm: 5px;
 $radius-md: 10px;
 $radius-lg: 20px;
+$radius-circle: 50%;
 
 /*****************************************/
 
@@ -86,3 +87,13 @@ $customNavbar-logo-width: 100px;
 $customNavbar-item-margin: 0 20px;
 $customNavbar-button-width: 200px;
 $customNavbar-item-hover-color: $pink;
+
+/* workPanelItem */
+$workPanelItem-height: 150px;
+$workPanelItem-number-fontSize: 15px;
+$workPanelItem-number-panelWidth: 40px;
+$workPanelItem-number-panelHeight: 40px;
+$workPanelItem-number-marginRight: 5px;
+$workPanelItem-number-borderRadius: $radius-circle;
+$workPanelItem-text-padding: 0 10px;
+$workPanelItem-text-fontSize: 18px;
