@@ -1,0 +1,18 @@
+@import "../../../styles/variables.scss";
+
+.search {
+  &-results {
+    background-color: $search-bg-color;
+    border-radius: $search-border-radius;
+
+    &-item {
+      border-bottom: $search-item-borderColor;
+      color: $search-item-color;
+
+      &:last-of-type {
+        border: none;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
