@@ -1,0 +1,12 @@
+@import "../../../styles/variables.scss";
+
+.input {
+  padding: $input-padding;
+  border-radius: $input-border-radius;
+  border: $input-border;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
