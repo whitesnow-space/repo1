@@ -3,4 +3,5 @@
 .customImage {
   width: 100%;
   border-radius: $customImage-border-radius;
+  box-sizing: border-box;
 }
