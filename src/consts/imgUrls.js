@@ -8,10 +8,11 @@ const IMGURLS = {
   img4_2: "assets/images/img4-2.png",
   img4_3: "assets/images/img4-3.png",
   calendar: "assets/images/calendarImg.png",
+  calendar_mobile: "assets/images/calendarImg-mobile.png",
   address: "assets/images/addressImg.png",
   footer: "assets/images/footerImg.png",
   business: "assets/images/businessImg.png",
-  img9: "assets/images/img9.png",
+  img5: "assets/images/img5.png",
 };
 
 export default IMGURLS;
