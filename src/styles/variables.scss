@@ -76,6 +76,7 @@ $button-placehoder-margin-right: $padding-md;
 /*****************************************/
 
 /* input */
+
 $input-padding: 20px;
 $input-border-radius: 5px;
 $input-border: $border-darkpurple;
@@ -83,11 +84,13 @@ $input-border: $border-darkpurple;
 /*****************************************/
 
 /* customImage */
+
 $customImage-border-radius: $radius-lg;
 
 /*****************************************/
 
 /* customNavbar */
+
 $customNavbar-bg-color: $lightwhite;
 $customNavbar-margin-top: 50px;
 $customNavbar-padding: 10px 30px;
@@ -97,7 +100,19 @@ $customNavbar-item-margin: 0 20px;
 $customNavbar-button-width: 200px;
 $customNavbar-item-hover-color: $pink;
 
+/*****************************************/
+
+/* search */
+
+$search-bg-color: $white;
+$search-border-radius: $radius-md;
+$search-item-borderColor: $border-lightpurple;
+$search-item-color: $purple;
+
+/*****************************************/
+
 /* workPanelItem */
+
 $workPanelItem-height: 150px;
 $workPanelItem-number-fontSize: 15px;
 $workPanelItem-number-panelWidth: 40px;
