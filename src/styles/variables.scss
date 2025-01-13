@@ -53,7 +53,7 @@ $customAccordion-bg-color: $white;
 $customAccordion-color: $darkpurple;
 $customAccordion-font-size: $font-size-md;
 $customAccordion-title-padding: $padding-sm;
-$customAccordion-list-border: 2px solid $lightpurple;
+$customAccordion-list-border: $border-lightpurple;
 
 /*****************************************/
 
@@ -69,7 +69,7 @@ $button-font-family: $primary-font-family;
 $button-font-size: $font-size-sm;
 $button-border-radius: $radius-sm;
 $button-border: $border-none;
-$button-lightpurple-border: 1px solid $lightpurple;
+$button-lightpurple-border: $border-lightpurple;
 $button-padding: $padding-sm 0;
 $button-placehoder-margin-right: $padding-md;
 
