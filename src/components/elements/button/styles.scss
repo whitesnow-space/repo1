@@ -13,6 +13,10 @@
     font-size: $button-font-size;
   }
 
+  &-icon {
+    margin-left: 10px;
+  }
+
   &:hover {
     transition: all 0.2s;
   }
