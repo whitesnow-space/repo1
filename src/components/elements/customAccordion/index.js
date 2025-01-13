@@ -15,7 +15,7 @@ const CustomAccordion = ({
   list,
 }) => {
   return (
-    <div className="customAccordion">
+    <div className="customAccordion mt-5">
       <Accordion>
         <Accordion.Item eventKey="0">
           <Accordion.Header>
@@ -30,7 +30,7 @@ const CustomAccordion = ({
           <Accordion.Body>
             <div>
               {!isAdditional ? (
-                <CustomAccordionCareList />
+                <CustomAccordionCareList placeholder={title} />
               ) : (
                 <CustomAccordionPriceList priceList={list} />
               )}

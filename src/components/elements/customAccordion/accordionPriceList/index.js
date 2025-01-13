@@ -11,12 +11,16 @@ const CustomAccordionPriceList = ({ priceList }) => {
       {priceList &&
         priceList.map((item, index) => {
           return (
-            <div className="customAccordion-priceList-item row" key={index}>
-              <div className="col-5 col-sm-7">
-                <span>{item.title}</span>
+            <div className="customAccordion-priceList-item" key={index}>
+              <div className="row">
+                <div className="col-5 col-sm-7">
+                  <span className="darkpurple">{item.title}</span>
+                </div>
+                <div className="col-4 col-sm-3"></div>
+                <div className="col-3 col-sm-2">
+                  <span className="darkpurple">kr {item.price}</span>
+                </div>
               </div>
-              <div className="col-4 col-sm-3"></div>
-              <div className="col-3 col-sm-2">{item.price}</div>
             </div>
           );
         })}
