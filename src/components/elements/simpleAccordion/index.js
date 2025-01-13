@@ -8,7 +8,7 @@ const SimpleAccordion = ({ data }) => {
       <Accordion>
         <Accordion.Item eventKey="0">
           <Accordion.Header>
-            <span className="darkpurple fw-bold">{data.title}</span>
+            <span className="darkpurple fw-bold py-2">{data.title}</span>
           </Accordion.Header>
           <Accordion.Body>
             <span className="darkpurple">{data.description}</span>
