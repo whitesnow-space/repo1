@@ -66,12 +66,13 @@ const LandingPage = () => {
           <div className="row">
             <div className="col-xl-6">
               <h5 className="darkpurple">Tire changes and tire hotels</h5>
-              {staticData.tireData.map((item) => {
+              {staticData.tireData.map((item, index) => {
                 return (
                   <CustomAccordion
                     title={item.title}
                     type="tire"
                     price={item.price}
+                    key={index}
                   />
                 );
               })}
@@ -84,12 +85,13 @@ const LandingPage = () => {
             </div>
             <div className="col-xl-6">
               <h5 className="darkpurple">Car Care</h5>
-              {staticData.careData.map((item) => {
+              {staticData.careData.map((item, index) => {
                 return (
                   <CustomAccordion
                     title={item.title}
                     type="care"
                     price={item.price}
+                    key={index}
                   />
                 );
               })}
@@ -105,6 +107,61 @@ const LandingPage = () => {
         <div className="landingPage-panel d-flex justify-content-between px-4">
           <p className="subtitle">Our Partner</p>
           <img src={IMGURLS.naf} alt="Partner-Img" />
+        </div>
+        <div className="landingPage-panel p-4">
+          <div className="row">
+            <div className="col-md-7 d-flex flex-column justify-content-between">
+              <CustomImage imgUrl={IMGURLS.img4_1} />
+              <div className="mt-3">
+                <div className="row">
+                  <div className="col-6">
+                    <CustomImage imgUrl={IMGURLS.img4_3} />
+                  </div>
+                  <div className="col-6">
+                    <CustomImage imgUrl={IMGURLS.img4_3} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-5 img4">
+              <CustomImage imgUrl={IMGURLS.img4_2} />
+            </div>
+          </div>
+        </div>
+        <div className="landingPage-panel">
+          <div className="row align-items-center">
+            <div className="col-md-5 d-flex flex-column justify-content-between">
+              <div>
+                <p className="subtitle darkpurple">
+                  Book a time that fits your schedule.
+                </p>
+                <p className="darkpurple">
+                  At Noddi, you choose when our technicians come to you. Simple
+                  as that.
+                </p>
+              </div>
+              <div className="row">
+                <div className="col-md-8">
+                  <Button
+                    placeholder="Book your appiontment now"
+                    color="darkpurple"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-7 row">
+              <div className="col-4 d-flex align-items-end">
+                <img
+                  className="w-100"
+                  src={IMGURLS.calendar_mobile}
+                  alt="Calendar-modile"
+                />
+              </div>
+              <div className="col-8">
+                <img className="w-100" src={IMGURLS.calendar} alt="Calendar" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
