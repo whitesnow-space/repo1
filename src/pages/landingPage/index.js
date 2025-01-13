@@ -5,6 +5,7 @@ import WorkPanel from "../../components/custom/workPanel";
 import Button from "../../components/elements/button";
 import CustomImage from "../../components/elements/customImage";
 import CustomAccordion from "../../components/elements/customAccordion";
+import SimpleAccordion from "../../components/elements/simpleAccordion";
 import { IMGURLS } from "../../consts";
 import staticData from "../../consts/staticData"; /* static Data */
 import "./styles.scss";
@@ -135,7 +136,7 @@ const LandingPage = () => {
                 <p className="subtitle darkpurple">
                   Book a time that fits your schedule.
                 </p>
-                <p className="darkpurple">
+                <p className="darkpurple landingPage-calendars-text">
                   At Noddi, you choose when our technicians come to you. Simple
                   as that.
                 </p>
@@ -149,17 +150,55 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-7 row">
-              <div className="col-4 d-flex align-items-end">
-                <img
-                  className="w-100"
-                  src={IMGURLS.calendar_mobile}
-                  alt="Calendar-modile"
-                />
+            <div className="col-md-7 landingPage-calendars">
+              <div className="row">
+                <div className="col-4 d-flex align-items-end">
+                  <img
+                    className="w-100"
+                    src={IMGURLS.calendar_mobile}
+                    alt="Calendar-modile"
+                  />
+                </div>
+                <div className="col-8">
+                  <img
+                    className="w-100"
+                    src={IMGURLS.calendar}
+                    alt="Calendar"
+                  />
+                </div>
               </div>
-              <div className="col-8">
-                <img className="w-100" src={IMGURLS.calendar} alt="Calendar" />
+            </div>
+          </div>
+        </div>
+        <div className="landingPage-panel">
+          <p className="subtitle">Frequently Asked Questions</p>
+          {staticData.tireData.map((item, index) => {
+            return (
+              <div>
+                <SimpleAccordion data={item} key={index} />
               </div>
+            );
+          })}
+          <div className="row">
+            <Link className="link col-md-4 mx-auto mt-4">
+              <Button
+                placeholder="See all frequently asked questions"
+                color="darkpurple"
+              />
+            </Link>
+          </div>
+        </div>
+        <div className="landingPage-panel">
+          <div className="row">
+            <div className="col-md-6 px-0">
+              <img className="w-50" src={IMGURLS.address} alt="Address" />
+            </div>
+            <div className="col-md-6">
+              <p className="subtitle">See if we deliver to your address!</p>
+              <p className="fw-bold darkpurple">
+                Noddi is currently in Oslo-area. Search your address to see what
+                we can deliver to you.
+              </p>
             </div>
           </div>
         </div>
