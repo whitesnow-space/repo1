@@ -3,10 +3,11 @@
 .input {
   padding: $input-padding;
   border-radius: $input-border-radius;
-  border: $input-border;
+  border: 1px solid $white;
 
   &:active,
   &:focus {
     outline: none;
+    border: $input-border;
   }
 }
