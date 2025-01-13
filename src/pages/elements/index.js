@@ -7,6 +7,7 @@ import TextPanel from "../../components/elements/textPanel";
 import CopyClipboard from "../../components/elements/copyClipboard";
 import CustomImage from "../../components/elements/customImage";
 import SimpleAccordion from "../../components/elements/simpleAccordion";
+import Search from "../../components/elements/search";
 import CustomNavbar from "../../components/custom/navbar";
 import staticData from "../../consts/staticData"; /* staticData */
 import "./styles.scss";
@@ -24,6 +25,9 @@ const ElementsPage = () => {
 
       <p>Input</p>
       <Input placeholder={"See if we deliver to your address"} />
+
+      <p>Search</p>
+      <Search list={staticData.tireData} />
 
       <p>Accordion</p>
 
