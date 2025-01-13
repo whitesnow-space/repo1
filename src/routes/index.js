@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 import ElementsPage from "../pages/elements";
-import landingPage from "../pages/landingPage";
+import LandingPage from "../pages/landingPage";
 
 const ROUTES = [
   {
@@ -10,7 +10,7 @@ const ROUTES = [
     path: "/elements",
   },
   {
-    Component: landingPage,
+    Component: LandingPage,
     path: "/",
   },
 ];
