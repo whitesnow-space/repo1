@@ -5,6 +5,7 @@ import CustomAccordion from "../../components/elements/customAccordion";
 import TextPanel from "../../components/elements/textPanel";
 import CopyClipboard from "../../components/elements/copyClipboard";
 import CustomImage from "../../components/elements/customImage";
+import SimpleAccordion from "../../components/elements/simpleAccordion";
 import CustomNavbar from "../../components/custom/navbar";
 import staticData from "../../consts/staticData"; /* staticData */
 import "./styles.scss";
@@ -29,6 +30,8 @@ const ElementsPage = () => {
         isAdditional={true}
         list={staticData.list}
       />
+
+      <SimpleAccordion data={staticData.tireData[0]} />
 
       <p>TextPanel</p>
       <TextPanel
