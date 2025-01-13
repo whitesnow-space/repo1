@@ -1,6 +1,7 @@
 import React from "react";
 
 import Button from "../../components/elements/button";
+import Input from "../../components/elements/input";
 import CustomAccordion from "../../components/elements/customAccordion";
 import TextPanel from "../../components/elements/textPanel";
 import CopyClipboard from "../../components/elements/copyClipboard";
@@ -20,6 +21,9 @@ const ElementsPage = () => {
       <p>button</p>
       <Button placeholder={"Darkpurple"} color={"darkpurple"} withIcon={true} />
       <Button placeholder={"White"} color={"white"} />
+
+      <p>Input</p>
+      <Input placeholder={"See if we deliver to your address"} />
 
       <p>Accordion</p>
 
