@@ -1,0 +1,42 @@
+@import "../../../styles/variables.scss";
+
+.footer {
+  margin: $footer-margin;
+  padding: $footer-padding;
+
+  &-logo {
+    width: $footer-logo-width;
+  }
+
+  &-link {
+    margin: $footer-link-margin;
+  }
+
+  &-plink {
+    color: $footer-plink-color;
+  }
+
+  &-panel {
+    background-color: $footer-panel-bgColor;
+    border-radius: $footer-panel-borderRadius;
+    padding: $footer-panel-padding;
+  }
+
+  &-image {
+    width: $footer-image-lWidth;
+  }
+
+  &-address {
+    background-color: $footer-address-bgColor;
+    padding: $footer-address-padding;
+    border-radius: $footer-address-borderRadius;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    &-image {
+      width: $footer-image-sWidth;
+    }
+  }
+}
