@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import WorkPanel from "../../components/custom/workPanel";
+import Footer from "../../components/custom/footer";
 import Button from "../../components/elements/button";
 import CustomImage from "../../components/elements/customImage";
 import CustomAccordion from "../../components/elements/customAccordion";
@@ -34,10 +35,8 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        <div className="langingPage-panel">
-          <p className="subtitle">Here's how it works</p>
-        </div>
         <div className="landingPage-panel">
+          <p className="subtitle">Here's how it works</p>
           <WorkPanel />
           <div className="row">
             <div className="col-6 col-md-4 mx-auto mt-5">
@@ -66,15 +65,17 @@ const LandingPage = () => {
           </div>
           <div className="row">
             <div className="col-xl-6">
-              <h5 className="darkpurple">Tire changes and tire hotels</h5>
+              <h5 className="darkpurple mt-3">Tire changes and tire hotels</h5>
               {staticData.tireData.map((item, index) => {
                 return (
-                  <CustomAccordion
-                    title={item.title}
-                    type="tire"
-                    price={item.price}
-                    key={index}
-                  />
+                  <div className="my-3" key={index}>
+                    <CustomAccordion
+                      title={item.title}
+                      type="tire"
+                      price={item.price}
+                      isAdditional={true}
+                    />
+                  </div>
                 );
               })}
               <CustomAccordion
@@ -85,15 +86,17 @@ const LandingPage = () => {
               />
             </div>
             <div className="col-xl-6">
-              <h5 className="darkpurple">Car Care</h5>
+              <h5 className="darkpurple mt-3">Car Care</h5>
               {staticData.careData.map((item, index) => {
                 return (
-                  <CustomAccordion
-                    title={item.title}
-                    type="care"
-                    price={item.price}
-                    key={index}
-                  />
+                  <div className="my-3" key={index}>
+                    <CustomAccordion
+                      title={item.title}
+                      type="care"
+                      price={item.price}
+                      isAdditional={true}
+                    />
+                  </div>
                 );
               })}
               <CustomAccordion
@@ -115,10 +118,10 @@ const LandingPage = () => {
               <CustomImage imgUrl={IMGURLS.img4_1} />
               <div className="mt-3">
                 <div className="row">
-                  <div className="col-6">
+                  <div className="col-6 ps-0">
                     <CustomImage imgUrl={IMGURLS.img4_3} />
                   </div>
-                  <div className="col-6">
+                  <div className="col-6 pe-0">
                     <CustomImage imgUrl={IMGURLS.img4_3} />
                   </div>
                 </div>
@@ -174,8 +177,8 @@ const LandingPage = () => {
           <p className="subtitle">Frequently Asked Questions</p>
           {staticData.tireData.map((item, index) => {
             return (
-              <div>
-                <SimpleAccordion data={item} key={index} />
+              <div className="mb-3" key={index}>
+                <SimpleAccordion data={item} />
               </div>
             );
           })}
@@ -188,20 +191,22 @@ const LandingPage = () => {
             </Link>
           </div>
         </div>
-        <div className="landingPage-panel">
-          <div className="row">
-            <div className="col-md-6 px-0">
-              <img className="w-50" src={IMGURLS.address} alt="Address" />
+        {/* <div className="landingPage-panel">
+          <div className="d-flex">
+            <div className="">
+              <CustomImage imgUrl={IMGURLS.address} />
             </div>
-            <div className="col-md-6">
+            <div className="">
               <p className="subtitle">See if we deliver to your address!</p>
               <p className="fw-bold darkpurple">
                 Noddi is currently in Oslo-area. Search your address to see what
                 we can deliver to you.
               </p>
+              <Search />
             </div>
           </div>
-        </div>
+        </div> */}
+        <Footer />
       </div>
     </div>
   );
