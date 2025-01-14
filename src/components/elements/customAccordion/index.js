@@ -15,7 +15,7 @@ const CustomAccordion = ({
   list,
 }) => {
   return (
-    <div className="customAccordion mt-5">
+    <div className="customAccordion">
       <Accordion>
         <Accordion.Item eventKey="0">
           <Accordion.Header>
