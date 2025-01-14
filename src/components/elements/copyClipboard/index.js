@@ -31,7 +31,7 @@ const CopyClipboard = ({ placeholder, type }) => {
   };
 
   return (
-    <span className="copyClipboard" onClick={() => copyText()}>
+    <span className="copyClipboard fw-bold" onClick={() => copyText()}>
       {!copied ? placeholder : notification[type]}
     </span>
   );
