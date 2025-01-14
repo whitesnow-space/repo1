@@ -24,11 +24,15 @@
     }
   }
 
+  &-button {
+    width: $customNavbar-button-width;
+  }
+
   .nav-link.active {
     color: $customNavbar-item-hover-color;
   }
 
-  &-button {
-    width: $customNavbar-button-width;
+  .navbar-brand {
+    overflow: visible;
   }
 }
