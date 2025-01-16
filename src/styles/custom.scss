@@ -18,7 +18,7 @@ body {
   box-sizing: border-box;
 
   font-family: "Gt America Standard, sans-serif";
-  background-color: $pink;
+  background-color: $orange;
   max-width: 100vw;
   padding: 0;
   margin: 0;
@@ -69,7 +69,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .custom-container {
-    padding: 0;
+    padding: 120px 20px 0 20px;
   }
 
   .title {
