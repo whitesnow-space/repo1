@@ -6,18 +6,18 @@ import Button from "../button";
 import { ICONS } from "../../../consts";
 import "./styles.scss";
 
-const TextPanel = ({ type, title, price, description }) => {
+const TextArea = ({ type, title, price, description }) => {
   return (
-    <div className="textPanel">
-      <div className="textPanel-header row">
-        <div className="d-flex col-12 col-sm-5">
-          <img src={ICONS[type]} alt="textPanel-img" />
+    <div className="textArea">
+      <div className="textArea-header row justify-content-between">
+        <div className="d-flex col-12 col-sm-5 px-0">
+          <img src={ICONS[type]} alt="textArea-img" />
           <div className="d-flex flex-column p-2">
-            <span className="textPanel-title">{title}</span>
+            <span className="textArea-title">{title}</span>
             <span>From {price},-</span>
           </div>
         </div>
-        <div className="col-12 col-sm-7 my-auto">
+        <div className="col-12 col-sm-7 px-0 my-auto">
           <Link className="customAccordion-careList-link">
             <Button
               color="white"
@@ -27,18 +27,18 @@ const TextPanel = ({ type, title, price, description }) => {
           </Link>
         </div>
       </div>
-      <div className="textPanel-body mt-3">
+      <div className="textArea-body mt-3 px-2">
         <span>{description}</span>
       </div>
     </div>
   );
 };
 
-TextPanel.propTypes = {
+TextArea.propTypes = {
   type: PropTypes.oneOf(["tire", "care", "star"]),
   title: PropTypes.string,
   price: PropTypes.number,
   description: PropTypes.string,
 };
 
-export default TextPanel;
+export default TextArea;
