@@ -3,6 +3,11 @@
 .footer {
   margin: $footer-margin;
   padding: $footer-padding;
+  border-top: 1px solid $pink;
+
+  &-container {
+    padding: 50px 80px 0 80px;
+  }
 
   &-logo {
     width: $footer-logo-width;
@@ -17,13 +22,25 @@
   }
 
   &-panel {
+    width: auto;
+    max-width: 1000px;
     background-color: $footer-panel-bgColor;
     border-radius: $footer-panel-borderRadius;
     padding: $footer-panel-padding;
   }
 
   &-image {
-    width: $footer-image-lWidth;
+    display: inline-block;
+    width: $footer-image-width;
+    vertical-align: top;
+  }
+
+  &-texts {
+    display: inline-block;
+    width: auto;
+    padding: 0 20px;
+    max-width: calc(100% - $footer-image-width);
+    vertical-align: top;
   }
 
   &-address {
@@ -35,8 +52,23 @@
 
 @media screen and (max-width: 1200px) {
   .footer {
-    &-image {
-      width: $footer-image-sWidth;
+    &-container {
+      padding: 20px 50px 0 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    &-container {
+      padding: 20px 20px 0 20px;
+    }
+    &-address {
+      margin-bottom: 5px;
+    }
+
+    &-button {
+      padding: 0;
     }
   }
 }
