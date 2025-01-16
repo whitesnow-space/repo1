@@ -6,10 +6,14 @@ import Button from "../../button";
 const CustomAccordionCareList = ({ placeholder }) => {
   return (
     <div className="customAccordion-careList">
-      <div className="row justify-content-between">
-        <div className="col-4 col-sm-6">Service</div>
-        <div className="col-4 col-sm-3">Small/Medium</div>
-        <div className="col-4 col-sm-3 text-end">Large/SUV</div>
+      <div className="customAccrodion-careList-title">
+        <div className="row">
+          <div className="col-4 col-sm-7">Service</div>
+          {/* <div className="col-4 col-sm-3">Small/Medium</div> */}
+          {/* <div className="col-4 col-sm-3 text-end">Large/SUV</div> */}
+          <div className="col-4 col-sm-3"></div>
+          <div className="col-4 col-sm-2">Price</div>
+        </div>
       </div>
       <div className="row">
         <div className="col-md-10 mx-auto my-5">
