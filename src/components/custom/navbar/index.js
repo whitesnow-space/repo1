@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 
 import Button from "../../elements/button";
-
+import { PATH } from "../../../consts";
 import "./styles.scss";
 
 const CustomNavbar = () => {
@@ -16,22 +16,22 @@ const CustomNavbar = () => {
         fixed="top"
       >
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href={PATH.INDEX}>
             <img className="customNavbar-logo" src={logoUrl} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto customNavbar-list">
-              <Nav.Link className="customNavbar-list-item" href="#Price">
+              <Nav.Link className="customNavbar-list-item" href={PATH.PRICE}>
                 Price
               </Nav.Link>
-              <Nav.Link className="customNavbar-list-item" href="#Service">
+              <Nav.Link className="customNavbar-list-item" href={PATH.SERVICE}>
                 Service
               </Nav.Link>
-              <Nav.Link className="customNavbar-list-item" href="#Help">
+              <Nav.Link className="customNavbar-list-item" href={PATH.HELP}>
                 Help and Contact
               </Nav.Link>
-              <Nav.Link className="customNavbar-list-item" href="#Business">
+              <Nav.Link className="customNavbar-list-item" href={PATH.BUSINESS}>
                 For Business
               </Nav.Link>
             </Nav>

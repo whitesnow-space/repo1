@@ -16,6 +16,8 @@
   &-list {
     &-item {
       margin: $customNavbar-item-margin;
+      color: $darkpurple;
+      font-weight: bold;
 
       &:hover,
       &:active {
