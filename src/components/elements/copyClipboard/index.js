@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
-const CopyClipboard = ({ placeholder, type }) => {
+const CopyClipboard = ({ placeholder, type = "general" }) => {
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
