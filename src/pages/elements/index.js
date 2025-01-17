@@ -3,7 +3,7 @@ import React from "react";
 import Button from "../../components/elements/button";
 import Input from "../../components/elements/input";
 import CustomAccordion from "../../components/elements/customAccordion";
-import TextPanel from "../../components/elements/textPanel";
+import TextArea from "../../components/elements/textArea";
 import CopyClipboard from "../../components/elements/copyClipboard";
 import CustomImage from "../../components/elements/customImage";
 import SimpleAccordion from "../../components/elements/simpleAccordion";
@@ -41,8 +41,8 @@ const ElementsPage = () => {
 
       <SimpleAccordion data={staticData.tireData[0]} />
 
-      <p>TextPanel</p>
-      <TextPanel
+      <p>TextArea</p>
+      <TextArea
         type="tire"
         title="Tire Change"
         price={1023}

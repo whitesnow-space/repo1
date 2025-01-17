@@ -1,20 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import AccordionPanel from "../../components/custom/accordionPanel";
 import WorkPanel from "../../components/custom/workPanel";
+import QuestionPanel from "../../components/custom/questionPanel";
 import Footer from "../../components/custom/footer";
 import Button from "../../components/elements/button";
 import CustomImage from "../../components/elements/customImage";
-import CustomAccordion from "../../components/elements/customAccordion";
-import SimpleAccordion from "../../components/elements/simpleAccordion";
+
 import { IMGURLS } from "../../consts";
 import staticData from "../../consts/staticData"; /* static Data */
 import "./styles.scss";
 
 const LandingPage = () => {
   return (
-    <div className="custom-container">
-      <div className="landingPage">
+    <div className="landingPage">
+      <div className="custom-container">
         <div className="landingPage-panel">
           <div className="row">
             <div className="col-md-6 col-12 px-0">
@@ -63,56 +64,18 @@ const LandingPage = () => {
               </Link>
             </div>
           </div>
-          <div className="row">
-            <div className="col-xl-6">
-              <h5 className="darkpurple mt-3">Tire changes and tire hotels</h5>
-              {staticData.tireData.map((item, index) => {
-                return (
-                  <div className="my-3" key={index}>
-                    <CustomAccordion
-                      title={item.title}
-                      type="tire"
-                      price={item.price}
-                      isAdditional={true}
-                    />
-                  </div>
-                );
-              })}
-              <CustomAccordion
-                title="Additional Services"
-                type="star"
-                isAdditional={true}
-                list={staticData.tireAdditionalData}
-              />
-            </div>
-            <div className="col-xl-6">
-              <h5 className="darkpurple mt-3">Car Care</h5>
-              {staticData.careData.map((item, index) => {
-                return (
-                  <div className="my-3" key={index}>
-                    <CustomAccordion
-                      title={item.title}
-                      type="care"
-                      price={item.price}
-                      isAdditional={true}
-                    />
-                  </div>
-                );
-              })}
-              <CustomAccordion
-                title="Additional Services"
-                type="star"
-                isAdditional={true}
-                list={staticData.careAdditionalData}
-              />
-            </div>
-          </div>
+          <AccordionPanel
+            tireData={staticData.tireData}
+            tireAdditionalData={staticData.tireAdditionalData}
+            careData={staticData.careData}
+            careAdditionalData={staticData.careAdditionalData}
+          />
         </div>
         <div className="landingPage-panel d-flex justify-content-between px-4">
           <p className="subtitle">Our Partner</p>
           <img src={IMGURLS.naf} alt="Partner-Img" />
         </div>
-        <div className="landingPage-panel p-4">
+        <div className="landingPage-panel px-2">
           <div className="row">
             <div className="col-md-7 d-flex flex-column justify-content-between">
               <CustomImage imgUrl={IMGURLS.img4_1} />
@@ -175,13 +138,7 @@ const LandingPage = () => {
         </div>
         <div className="landingPage-panel">
           <p className="subtitle">Frequently Asked Questions</p>
-          {staticData.tireData.map((item, index) => {
-            return (
-              <div className="mb-3" key={index}>
-                <SimpleAccordion data={item} />
-              </div>
-            );
-          })}
+          <QuestionPanel data={staticData.tireData} />
           <div className="row">
             <Link className="link col-md-4 mx-auto mt-4">
               <Button
@@ -206,8 +163,8 @@ const LandingPage = () => {
             </div>
           </div>
         </div> */}
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 };
