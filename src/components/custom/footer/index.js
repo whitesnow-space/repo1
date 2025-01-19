@@ -90,6 +90,22 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <div className="mt-3">
+          <div className="d-flex flex-wrap justify-content-between">
+            <div className="">Org No 927347407</div>
+            <div className="">Ramstadsletta 24, 1363 Høvik</div>
+            <div className="">
+              <Link className="link darkpurple" to={PATH.PRIVACY}>
+                Privacy Policy
+              </Link>
+            </div>
+            <div className="">
+              <Link className="link darkpurple" to={PATH.TERMS}>
+                Terms of Sale
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
