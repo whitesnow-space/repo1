@@ -5,6 +5,10 @@ const PATH = {
   HELP: "/help",
   BUSINESS: "/business",
   BOOKING: "/booking",
+  PRIVACY: "/privacy",
+  TERMS: "terms",
+  WORK: "work",
+  ABOUT: "/about",
   ELEMENTS: "/elements",
 };
 
