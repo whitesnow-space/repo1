@@ -10,6 +10,7 @@ import CustomImage from "../../components/elements/customImage";
 import { IMGURLS, PATH } from "../../consts";
 import staticData from "../../consts/staticData"; /* static Data */
 import "./styles.scss";
+import AddressSearchPanel from "../../components/custom/addressSearchPanel";
 
 const LandingPage = () => {
   useEffect(() => {
@@ -154,21 +155,7 @@ const LandingPage = () => {
             </Link>
           </div>
         </div>
-        {/* <div className="landingPage-panel">
-          <div className="d-flex">
-            <div className="">
-              <CustomImage imgUrl={IMGURLS.address} />
-            </div>
-            <div className="">
-              <p className="subtitle">See if we deliver to your address!</p>
-              <p className="fw-bold darkpurple">
-                Noddi is currently in Oslo-area. Search your address to see what
-                we can deliver to you.
-              </p>
-              <Search />
-            </div>
-          </div>
-        </div> */}
+        <AddressSearchPanel />
       </div>
     </div>
   );

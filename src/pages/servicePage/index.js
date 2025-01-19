@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 
 import TextPanel from "../../components/custom/textPanel";
+import AddressSearchPanel from "../../components/custom/addressSearchPanel";
 import staticData from "../../consts/staticData";
 
 const ServicePage = () => {
@@ -26,6 +27,7 @@ const ServicePage = () => {
             careAdditionalData={staticData.careAdditionalData}
           />
         </div>
+        <AddressSearchPanel />
       </div>
     </div>
   );

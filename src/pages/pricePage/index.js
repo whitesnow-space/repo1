@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import Button from "../../components/elements/button";
 import AccordionPanel from "../../components/custom/accordionPanel";
+import AddressSearchPanel from "../../components/custom/addressSearchPanel";
 import staticData from "../../consts/staticData";
 
 const PricePage = () => {
@@ -36,6 +37,7 @@ const PricePage = () => {
             />
           </div>
         </div>
+        <AddressSearchPanel />
       </div>
     </div>
   );

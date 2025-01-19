@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 
 import CopyClipboard from "../../components/elements/copyClipboard";
 import QuestionPanel from "../../components/custom/questionPanel";
+import AddressSearchPanel from "../../components/custom/addressSearchPanel";
 import staticData from "../../consts/staticData";
 
 const HelpPage = () => {
@@ -28,6 +29,7 @@ const HelpPage = () => {
           </div>
         </div>
         <QuestionPanel data={staticData.careData} />
+        <AddressSearchPanel />
       </div>
     </div>
   );
