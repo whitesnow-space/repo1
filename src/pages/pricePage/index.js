@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import Button from "../../components/elements/button";
 import AccordionPanel from "../../components/custom/accordionPanel";
-import Footer from "../../components/custom/footer";
-
 import staticData from "../../consts/staticData";
 
 const PricePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="pricePage">
       <div className="custom-container">
@@ -35,7 +37,6 @@ const PricePage = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

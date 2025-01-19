@@ -1,37 +1,58 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
+import LandingPage from "../pages/landingPage";
 import ElementsPage from "../pages/elements";
 import PricePage from "../pages/pricePage";
 import ServicePage from "../pages/servicePage";
 import HelpPage from "../pages/helpPage";
 import BusinessPage from "../pages/businessPage";
-import LandingPage from "../pages/landingPage";
+import BookingPage from "../pages/bookingPage";
+import PrivacyPage from "../pages/privacyPage";
+import TermsPage from "../pages/termsPage";
+import WorkPage from "../pages/workPage";
+import { PATH } from "../consts";
 
 const ROUTES = [
   {
     Component: ElementsPage,
-    path: "/elements",
+    path: PATH.ELEMENTS,
   },
   {
     Component: PricePage,
-    path: "/price",
+    path: PATH.PRICE,
   },
   {
     Component: ServicePage,
-    path: "/service",
+    path: PATH.SERVICE,
   },
   {
     Component: HelpPage,
-    path: "/help",
+    path: PATH.HELP,
   },
   {
     Component: BusinessPage,
-    path: "/business",
+    path: PATH.BUSINESS,
+  },
+  {
+    Component: BookingPage,
+    path: PATH.BOOKING,
+  },
+  {
+    Component: PrivacyPage,
+    path: PATH.PRIVACY,
+  },
+  {
+    Component: TermsPage,
+    path: PATH.TERMS,
+  },
+  {
+    Component: WorkPage,
+    path: PATH.WORK,
   },
   {
     Component: LandingPage,
-    path: "/",
+    path: PATH.INDEX,
   },
 ];
 

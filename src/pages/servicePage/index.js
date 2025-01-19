@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-import Footer from "../../components/custom/footer";
 import TextPanel from "../../components/custom/textPanel";
 import staticData from "../../consts/staticData";
 
 const ServicePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="servicePage">
       <div className="custom-container">
@@ -24,7 +27,6 @@ const ServicePage = () => {
           />
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

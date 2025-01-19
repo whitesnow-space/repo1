@@ -5,7 +5,7 @@ import Button from "../../elements/button";
 import CustomImage from "../../elements/customImage";
 import CopyClipboard from "../../elements/copyClipboard";
 
-import { IMGURLS } from "../../../consts";
+import { IMGURLS, PATH } from "../../../consts";
 import "./styles.scss";
 
 const Footer = () => {
@@ -13,9 +13,9 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-container">
         <div className="row">
-          <div className="col-xl-4 col-12">
+          <div className="col-lg-4 col-12">
             <div className="row">
-              <div className="col-6 col-xl-12">
+              <div className="col-8 col-sm-6 col-lg-12">
                 <img
                   className="footer-logo"
                   src="assets/images/logo.png"
@@ -29,26 +29,26 @@ const Footer = () => {
                   <i className="footer-link bi bi-instagram"></i>
                 </div>
               </div>
-              <div className="col-6 col-xl-12">
-                <Link className="link footer-plink">
+              <div className="col-4 col-sm-6 col-lg-12">
+                <Link className="link footer-plink" to={PATH.PRICE}>
                   <p>Prices</p>
                 </Link>
-                <Link className="link footer-plink">
+                <Link className="link footer-plink" to={PATH.SERVICE}>
                   <p>Service</p>
                 </Link>
-                <Link className="link footer-plink">
+                <Link className="link footer-plink" to={PATH.HELP}>
                   <p>Help and Contact</p>
                 </Link>
-                <Link className="link footer-plink">
+                <Link className="link footer-plink" to={PATH.BUSINESS}>
                   <p>For Business</p>
                 </Link>
-                <Link className="link footer-plink">
+                <Link className="link footer-plink" to={PATH.WORK}>
                   <p>About Us</p>
                 </Link>
               </div>
             </div>
           </div>
-          <div className="col-xl-8 col-12">
+          <div className="col-lg-8 col-12">
             <div className="footer-panel">
               <div className="footer-image">
                 <CustomImage imgUrl={IMGURLS.footer} />
@@ -69,7 +69,7 @@ const Footer = () => {
                   if you are interested in any of the following opportunities.
                 </p>
                 <div className="row align-items-center">
-                  <div className="footer-address col-12 col-md-7 d-flex justify-content-center">
+                  <div className="footer-address col-12 col-xl-7 d-flex justify-content-center">
                     <span>
                       Reach out at&nbsp;
                       <CopyClipboard
@@ -78,7 +78,7 @@ const Footer = () => {
                       />
                     </span>
                   </div>
-                  <div className="footer-button col-12 col-md-5">
+                  <div className="footer-button col-12 col-xl-5">
                     <Button
                       placeholder="Read more"
                       color="darkpurple"

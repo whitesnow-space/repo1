@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Button from "../../components/elements/button";
 import Input from "../../components/elements/input";
 import CopyClipboard from "../../components/elements/copyClipboard";
 import CustomImage from "../../components/elements/customImage";
 import TextPanel from "../../components/custom/textPanel";
-import Footer from "../../components/custom/footer";
 import { IMGURLS } from "../../consts";
 import staticData from "../../consts/staticData";
 import "./styles.scss";
 
 const BusinessPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="businessPage">
       <div className="custom-container">
@@ -90,7 +93,6 @@ const BusinessPage = () => {
           />
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

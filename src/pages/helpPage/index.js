@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import CopyClipboard from "../../components/elements/copyClipboard";
 import QuestionPanel from "../../components/custom/questionPanel";
-import Footer from "../../components/custom/footer";
 import staticData from "../../consts/staticData";
 
-const helpPage = () => {
+const HelpPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="helpPage">
       <div className="custom-container">
@@ -26,9 +29,8 @@ const helpPage = () => {
         </div>
         <QuestionPanel data={staticData.careData} />
       </div>
-      <Footer />
     </div>
   );
 };
 
-export default helpPage;
+export default HelpPage;

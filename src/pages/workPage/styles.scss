@@ -1,0 +1,11 @@
+@import "../../styles/variables.scss";
+
+.workPage {
+  &-button1 {
+    width: 230px;
+  }
+
+  &-button2 {
+    width: 360px;
+  }
+}

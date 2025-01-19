@@ -8,6 +8,7 @@
   border-radius: $customNavbar-border-radius;
   font-family: $primary-font-family;
   background-color: $customNavbar-bg-color;
+  backdrop-filter: blur(15px);
 
   &-logo {
     width: $customNavbar-logo-width;

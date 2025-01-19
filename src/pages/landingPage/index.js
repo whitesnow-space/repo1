@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import AccordionPanel from "../../components/custom/accordionPanel";
 import WorkPanel from "../../components/custom/workPanel";
 import QuestionPanel from "../../components/custom/questionPanel";
-import Footer from "../../components/custom/footer";
 import Button from "../../components/elements/button";
 import CustomImage from "../../components/elements/customImage";
 
-import { IMGURLS } from "../../consts";
+import { IMGURLS, PATH } from "../../consts";
 import staticData from "../../consts/staticData"; /* static Data */
 import "./styles.scss";
 
 const LandingPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="landingPage">
       <div className="custom-container">
@@ -40,7 +43,7 @@ const LandingPage = () => {
           <p className="subtitle">Here's how it works</p>
           <WorkPanel />
           <div className="row">
-            <div className="col-6 col-md-4 mx-auto mt-5">
+            <div className="col-6 col-md-6 col-lg-4 mx-auto mt-5">
               <Link className="link">
                 <Button
                   placeholder="Book your appointment now"
@@ -52,7 +55,7 @@ const LandingPage = () => {
         </div>
         <div className="landingPage-panel">
           <div className="row">
-            <div className="col-md-6 mx-auto justify-content-center">
+            <div className="col-md-8 col-lg-6 mx-auto justify-content-center">
               <p className="darkpurple subtitle text-center">
                 Services and Prices
               </p>
@@ -108,7 +111,7 @@ const LandingPage = () => {
                 </p>
               </div>
               <div className="row">
-                <div className="col-md-8">
+                <div className="col-lg-8">
                   <Button
                     placeholder="Book your appiontment now"
                     color="darkpurple"
@@ -140,7 +143,10 @@ const LandingPage = () => {
           <p className="subtitle">Frequently Asked Questions</p>
           <QuestionPanel data={staticData.tireData} />
           <div className="row">
-            <Link className="link col-md-4 mx-auto mt-4">
+            <Link
+              className="link col-md-6 col-lg-4 mx-auto mt-4"
+              to={PATH.HELP}
+            >
               <Button
                 placeholder="See all frequently asked questions"
                 color="darkpurple"
@@ -164,7 +170,6 @@ const LandingPage = () => {
           </div>
         </div> */}
       </div>
-      <Footer />
     </div>
   );
 };

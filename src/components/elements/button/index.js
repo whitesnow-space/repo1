@@ -8,7 +8,7 @@ const Button = ({ color, placeholder, withIcon = false }) => {
   return (
     <>
       <button className={cx("button", `button-${color}`)} type="button">
-        <div className="d-flex mt-1">
+        <div className="d-flex mb-1">
           <span className="button-placeholder">{placeholder}</span>
           {withIcon && <i className="button-icon bi bi-arrow-right"></i>}
         </div>

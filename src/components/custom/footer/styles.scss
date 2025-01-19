@@ -52,6 +52,18 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .footer {
+    &-address {
+      margin-bottom: 5px;
+    }
+
+    &-button {
+      padding: 0;
+    }
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .footer {
     &-container {
@@ -64,13 +76,6 @@
   .footer {
     &-container {
       padding: 20px 20px 0 20px;
-    }
-    &-address {
-      margin-bottom: 5px;
-    }
-
-    &-button {
-      padding: 0;
     }
   }
 }

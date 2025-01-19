@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import Button from "../../elements/button";
 import { PATH } from "../../../consts";
@@ -16,27 +17,29 @@ const CustomNavbar = () => {
         fixed="top"
       >
         <Container>
-          <Navbar.Brand href={PATH.INDEX}>
-            <img className="customNavbar-logo" src={logoUrl} alt="Logo" />
+          <Navbar.Brand>
+            <Link to={PATH.INDEX} className="link">
+              <img className="customNavbar-logo" src={logoUrl} alt="Logo" />
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto customNavbar-list">
-              <Nav.Link className="customNavbar-list-item" href={PATH.PRICE}>
+              <Link className="customNavbar-list-item link" to={PATH.PRICE}>
                 Price
-              </Nav.Link>
-              <Nav.Link className="customNavbar-list-item" href={PATH.SERVICE}>
+              </Link>
+              <Link className="customNavbar-list-item link" to={PATH.SERVICE}>
                 Service
-              </Nav.Link>
-              <Nav.Link className="customNavbar-list-item" href={PATH.HELP}>
+              </Link>
+              <Link className="customNavbar-list-item link" to={PATH.HELP}>
                 Help and Contact
-              </Nav.Link>
-              <Nav.Link className="customNavbar-list-item" href={PATH.BUSINESS}>
+              </Link>
+              <Link className="customNavbar-list-item link" to={PATH.BUSINESS}>
                 For Business
-              </Nav.Link>
+              </Link>
             </Nav>
             <Nav>
-              <Nav.Link eventKey={2} href="#memes">
+              <Link to={PATH.BOOKING} className="link">
                 <div className="customNavbar-button">
                   <Button
                     placeholder="Book now"
@@ -44,7 +47,7 @@ const CustomNavbar = () => {
                     withIcon={true}
                   />
                 </div>
-              </Nav.Link>
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

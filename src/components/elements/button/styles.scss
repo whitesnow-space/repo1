@@ -9,13 +9,9 @@
   border-radius: $button-border-radius;
   border: $button-border;
 
-  &-placeholder {
-    margin-right: $button-placehoder-margin-right;
-    font-size: $button-font-size;
-  }
-
   &-icon {
     margin-left: 10px;
+    margin-top: 1px;
   }
 
   &:hover {
