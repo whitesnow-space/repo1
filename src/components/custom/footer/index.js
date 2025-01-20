@@ -79,11 +79,13 @@ const Footer = () => {
                     </span>
                   </div>
                   <div className="footer-button col-12 col-xl-5">
-                    <Button
-                      placeholder="Read more"
-                      color="darkpurple"
-                      withIcon={true}
-                    />
+                    <Link className="link" to={PATH.WORK}>
+                      <Button
+                        placeholder="Read more"
+                        color="darkpurple"
+                        withIcon={true}
+                      />
+                    </Link>
                   </div>
                 </div>
               </div>
