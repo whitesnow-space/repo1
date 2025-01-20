@@ -1,3 +1,5 @@
+import IMGURLS from "./imgUrls";
+
 const staticData = {
   tireData: [
     {
@@ -106,6 +108,72 @@ const staticData = {
     { title: "title-3", price: "KP-3" },
   ],
   imgUrl: "assets/images/img1.jpg",
+  profileList: [
+    {
+      name: "Mattis Araya",
+      image: IMGURLS.person1,
+      role: "Tech lead",
+      email: "email",
+      linkedin: "linkedin",
+      phone: "phone",
+    },
+    {
+      name: "Syver Kok",
+      image: IMGURLS.person2,
+      role: "Developer",
+      email: "email",
+      linkedin: "linkedin",
+      phone: "phone",
+    },
+    {
+      name: "Tom-Arne Danielsen",
+      image: IMGURLS.person3,
+      role: "CEO & Founder",
+      email: "email",
+      linkedin: "linkedin",
+      phone: "phone",
+    },
+    {
+      name: "Odin Alveng",
+      image: IMGURLS.person4,
+      role: "CCO & Co-founder",
+      email: "email",
+      linkedin: "linkedin",
+      phone: "phone",
+    },
+    {
+      name: "Joachim Rathke",
+      image: IMGURLS.person5,
+      role: "CPO & Co-founder",
+      email: "email",
+      linkedin: "linkedin",
+      phone: "phone",
+    },
+    {
+      name: "Stian Grimsgaard",
+      image: IMGURLS.person6,
+      role: "CTO & Co-founder",
+      email: "email",
+      linkedin: "linkedin",
+      phone: "phone",
+    },
+    {
+      name: "Carl Watkins",
+      image: IMGURLS.person7,
+      role: "Head of detailing",
+      email: "email",
+      linkedin: "linkedin",
+      phone: "phone",
+    },
+    {
+      name: "Andrew Morrow",
+      image: IMGURLS.person8,
+      role: "Detailer",
+      email: "email",
+      linkedin: "linkedin",
+      phone: "phone",
+    },
+  ],
 };
 
 export default staticData;

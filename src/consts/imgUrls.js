@@ -13,6 +13,16 @@ const IMGURLS = {
   footer: "assets/images/footerImg.png",
   business: "assets/images/businessImg.png",
   img5: "assets/images/img5.png",
+  person1: "assets/images/person1.jpg",
+  person2: "assets/images/person2.jpg",
+  person3: "assets/images/person3.jpg",
+  person4: "assets/images/person4.jpg",
+  person5: "assets/images/person5.jpg",
+  person6: "assets/images/person6.jpg",
+  person7: "assets/images/person7.jpg",
+  person8: "assets/images/person8.jpg",
+  stars: "assets/images/stars.png",
+  fstars: "assets/images/5stars.svg",
 };
 
 export default IMGURLS;
