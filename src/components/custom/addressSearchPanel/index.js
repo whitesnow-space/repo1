@@ -7,7 +7,7 @@ import "./styles.scss";
 
 const AddressSearchPanel = () => {
   return (
-    <div className="addressSearchPanel">
+    <div className="addressSearchPanel my-5">
       <div className="row align-items-center">
         <div className="col-12 col-lg-6">
           <div className="addressSearchPanel-image">
