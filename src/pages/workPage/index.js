@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import CopyClipboard from "../../components/elements/copyClipboard";
 import "./styles.scss";
 
-const workPage = () => {
+const WorkPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="workPage">
       <div className="custom-container">
@@ -24,14 +28,16 @@ const workPage = () => {
             </span>
           </div>
         </div>
-        <div>
+        <div className="mt-5">
           <p className="subtitle">About the job</p>
           <p>
             <strong>Wheel changers</strong>
           </p>
-          <li>Can you change the wheels on a car?</li>
-          <li>Do you like working on your own</li>
-          <li>Are you somewhat handy and enjoy physical work?</li>
+          <div>
+            <li>Can you change the wheels on a car?</li>
+            <li>Do you like working on your own</li>
+            <li>Are you somewhat handy and enjoy physical work?</li>
+          </div>
           <p>If so, we might be a good match.</p>
           <p>
             We are looking for service and quality oriented Wheel Change
@@ -40,23 +46,27 @@ const workPage = () => {
           <p>
             <strong>What we can provide:</strong>
           </p>
-          <li>Average pay of 300 NOK per hour</li>
-          <li>Paid milage and paid tolls</li>
-          <li>We provide the tools you need</li>
-          <li>
-            Flexible working hours between 07:00 and 21:00, seven days a week
-          </li>
-          <li>Quick support if you need help</li>
+          <div>
+            <li>Average pay of 300 NOK per hour</li>
+            <li>Paid milage and paid tolls</li>
+            <li>We provide the tools you need</li>
+            <li>
+              Flexible working hours between 07:00 and 21:00, seven days a week
+            </li>
+            <li>Quick support if you need help</li>
+          </div>
           <p>
             <strong>What you need:</strong>
           </p>
-          <li>A car and a valid driver's license</li>
-          <li>
-            ID / Passport / Residence card(if you come from a country other than
-            Norway)
-          </li>
-          <li>Smartphone with data access</li>
-          <li>Basic English or Norwegian language</li>
+          <div>
+            <li>A car and a valid driver's license</li>
+            <li>
+              ID / Passport / Residence card(if you come from a country other
+              than Norway)
+            </li>
+            <li>Smartphone with data access</li>
+            <li>Basic English or Norwegian language</li>
+          </div>
           <p>
             <strong>What a day looks like:</strong>
           </p>
@@ -79,4 +89,4 @@ const workPage = () => {
   );
 };
 
-export default workPage;
+export default WorkPage;

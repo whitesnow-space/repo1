@@ -56,6 +56,10 @@ body {
   text-decoration: none;
 }
 
+li:last-of-type {
+  margin-bottom: 16px;
+}
+
 @media screen and (max-width: 1200px) {
   .title {
     font-size: 36px;

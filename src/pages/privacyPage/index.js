@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const PrivacyPage = () => {
   useEffect(() => {
@@ -37,16 +38,29 @@ const PrivacyPage = () => {
             The personal data of the users that are collected and processed
             through the website:
           </p>
-          <li>https://noddi.no</li>
-          <li>https://noddi.se</li>
-          <li>https://noddi.fi</li>
+          <li>
+            <Link className="link" to="https://noddi.no">
+              https://noddi.no
+            </Link>
+          </li>
+          <li>
+            <Link className="link" to="https://noddi.se">
+              https://noddi.se
+            </Link>
+          </li>
+          <li>
+            <Link className="link" to="https://noddi.fi">
+              https://noddi.fi
+            </Link>
+          </li>
           <li>Any sub0-domains of the above mentioed webpages</li>
           <p>Will be under responsibility and in charge of:</p>
           <p>Noddi AS.</p>
           <p>Enail: hei@noddi.no </p>
           <p>(Hereinafter referred to as Noddi).</p>
         </div>
-        <p className="">TYPES OF INFORMATION GATHERED</p>
+        <div></div>
+        <p className="fw-bold">2. TYPES OF INFORMATION GATHERED</p>
         <p>
           The information we learn from customers helps personalize and
           continually improve your experience at Noddi. Here are the types of
@@ -60,11 +74,13 @@ const PrivacyPage = () => {
           result of those actions, you might supply us with the following
           information:
         </p>
-        <li>First and last name</li>
-        <li>Email address</li>
-        <li>Phone number</li>
-        <li>Address</li>
-        <li>Car registration ID</li>
+        <div>
+          <li>First and last name</li>
+          <li>Email address</li>
+          <li>Phone number</li>
+          <li>Address</li>
+          <li>Car registration ID</li>
+        </div>
         <p>
           Any additional information relating to you that you provide to us
           directly or indirectly through our website and services. Noddi will
@@ -76,20 +92,26 @@ const PrivacyPage = () => {
           using the website you automatically provide us with the following
           information:
         </p>
-        <li>The device and usage information you use to access the website</li>
-        <li>Your IP address</li>
-        <li>Browser and device characteristics</li>
-        <li>Operating system</li>
-        <li>Referring URLs</li>
+        <div>
+          <li>
+            The device and usage information you use to access the website
+          </li>
+          <li>Your IP address</li>
+          <li>Browser and device characteristics</li>
+          <li>Operating system</li>
+          <li>Referring URLs</li>
+        </div>
         <p>
           If you access the website through a mobile phone, we will collect the
           following information
         </p>
-        <li>Mobile device ID</li>
-        <li>Model and manufacturer</li>
-        <li>Operating system</li>
-        <li>Version information</li>
-        <li>IP address</li>
+        <div>
+          <li>Mobile device ID</li>
+          <li>Model and manufacturer</li>
+          <li>Operating system</li>
+          <li>Version information</li>
+          <li>IP address</li>
+        </div>
         <p>
           <strong>Payment Information:</strong>Your payment data will be
           processed by the payment processors available at Noddi(Stripe, Vipps),
@@ -100,8 +122,18 @@ const PrivacyPage = () => {
           the services.
         </p>
         <p>Consult Stripe's and Vipps' privacy policy here:</p>
-        <li>https://stripe.com/gb/privacy</li>
-        <li>https://vipps.no</li>
+        <div>
+          <li>
+            <Link className="link" to="https://stripe.com/gb/privacy">
+              https://stripe.com/gb/privacy
+            </Link>
+          </li>
+          <li>
+            <Link className="link" to="https://vipps.no">
+              https://vipps.no
+            </Link>
+          </li>
+        </div>
         <p>
           <strong>GOOGLE Analytics.</strong> We use Google Analytics provided by
           Google, Inc., USA (“Google”). These tool and technologies collect and
@@ -116,25 +148,33 @@ const PrivacyPage = () => {
           service.
         </p>
         <p>Please consult Google's privacy policy here:</p>
-        <li>https://policies.google.com/privacy</li>
+        <div>
+          <li>
+            <Link className="link" to="https://policies.google.com/privacy">
+              https://policies.google.com/privacy
+            </Link>
+          </li>
+        </div>
         <p>
           <strong>Facebook Pixel: </strong>Our website uses the Facebook Pixel.
           Through the Facebook Pixel we can collect user information for
           different purposes. We use the Facebook Pixel for the following
           purposes:
         </p>
-        <li>
-          Collect statistics about our platform (for example, the number of
-          users who visited a page).
-        </li>
-        <li>
-          Collect information about how you interact with our platform (for
-          example, whether you opened or followed links contained in them).
-        </li>
-        <li>Personalize online services and marketing communications.</li>
-        <li>
-          Tailor advertisements to users and optimize advertising campaigns.
-        </li>
+        <div>
+          <li>
+            Collect statistics about our platform (for example, the number of
+            users who visited a page).
+          </li>
+          <li>
+            Collect information about how you interact with our platform (for
+            example, whether you opened or followed links contained in them).
+          </li>
+          <li>Personalize online services and marketing communications.</li>
+          <li>
+            Tailor advertisements to users and optimize advertising campaigns.
+          </li>
+        </div>
         <p>
           <strong>Facebook Pixel: </strong>Our website uses the Facebook Pixel.
           Through the Facebook Pixel we can collect user information for
@@ -153,11 +193,35 @@ const PrivacyPage = () => {
           each social network used on our website.
         </p>
         <p>Facebook</p>
-        <li>https://www.facebook.com/privacy/exsubscriptionation</li>
+        <div>
+          <li>
+            <Link
+              className="link"
+              to="https://www/facebook.com/privacy/exsubscriptionation"
+            >
+              https://www.facebook.com/privacy/exsubscriptionation
+            </Link>
+          </li>
+        </div>
         <p>Instagram</p>
-        <li>https://instagram.com/about/legal/privacy</li>
+        <div>
+          <li>
+            <Link
+              className="link"
+              to="https://instagram.com/about/legal/privacy"
+            >
+              https://instagram.com/about/legal/privacy
+            </Link>
+          </li>
+        </div>
         <p>LinkedIn</p>
-        <li>https://www.linkedin.com/legal/privacy-policy?</li>
+        <div>
+          <li>
+            <Link to="https://www/linkedin.com/legal/privacy-policy">
+              https://www.linkedin.com/legal/privacy-policy?
+            </Link>
+          </li>
+        </div>
         <p className="fw-bold">3. HOW LONG WE KEEP YOUR DATA</p>
         <p>
           Personal data provided by users through the website and services will
@@ -179,37 +243,42 @@ const PrivacyPage = () => {
           maintain, protect and improve our current website and services. We use
           personal information collected through our website as described below:
         </p>
-        <li>Identify you as a user in our system.</li>
-        <li>User registration.</li>
-        <li>Provide the services</li>
-        <li>Process payments</li>
-        <li>Send invoices for services to clients.</li>
-        <li>Improve our services, website, and how we operate our business.</li>
-        <li>
-          Understand and enhance your experience using our website and services.
-        </li>
-        <li>
-          Respond to your commments or questions through our support team.
-        </li>
-        <li>
-          Send you related information, including confirmations, invoices
-          technical notices, updates, security alerts and support and
-          administrative messages.
-        </li>
-        <li>
-          Communicate with you about upcoming events, offers and news about
-          services offered by Noddi and our selected partners.
-        </li>
-        <li>Marketing purposes of Noddi</li>
-        <li>
-          Link or combine your information with other information we get from
-          third parties to help understand your needs and provide you with
-          better service.
-        </li>
-        <li>
-          Protect, investigate and deter against fraudulent, unauthorized or
-          illegal activity.
-        </li>
+        <div>
+          <li>Identify you as a user in our system.</li>
+          <li>User registration.</li>
+          <li>Provide the services</li>
+          <li>Process payments</li>
+          <li>Send invoices for services to clients.</li>
+          <li>
+            Improve our services, website, and how we operate our business.
+          </li>
+          <li>
+            Understand and enhance your experience using our website and
+            services.
+          </li>
+          <li>
+            Respond to your commments or questions through our support team.
+          </li>
+          <li>
+            Send you related information, including confirmations, invoices
+            technical notices, updates, security alerts and support and
+            administrative messages.
+          </li>
+          <li>
+            Communicate with you about upcoming events, offers and news about
+            services offered by Noddi and our selected partners.
+          </li>
+          <li>Marketing purposes of Noddi</li>
+          <li>
+            Link or combine your information with other information we get from
+            third parties to help understand your needs and provide you with
+            better service.
+          </li>
+          <li>
+            Protect, investigate and deter against fraudulent, unauthorized or
+            illegal activity.
+          </li>
+        </div>
         <p className="fw-bold">5. HOW DO YOU GET MY CONSENT?</p>
         <p>
           By registering as a user, contracting our services, providing
