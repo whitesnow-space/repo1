@@ -36,6 +36,19 @@ const LandingPage = () => {
                   color="darkpurple"
                   withIcon={true}
                 />
+                <div className="mt-2">
+                  <img
+                    className="landingPage-star-img"
+                    src={IMGURLS.stars}
+                    alt="stars"
+                  />
+                  <span className="landingPage-star fw-bold">
+                    <span className="landingPage-star-text">
+                      4.75 out of 5 stars&nbsp;
+                    </span>
+                    with over 11 000 orders
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -80,22 +93,93 @@ const LandingPage = () => {
           <img src={IMGURLS.naf} alt="Partner-Img" />
         </div>
         <div className="landingPage-panel px-2">
-          <div className="row">
-            <div className="col-md-7 d-flex flex-column justify-content-between">
-              <CustomImage imgUrl={IMGURLS.img4_1} />
-              <div className="mt-3">
-                <div className="row">
-                  <div className="col-6 ps-0">
-                    <CustomImage imgUrl={IMGURLS.img4_3} />
+          <div className="landingPage-imgPanel p-3">
+            <p className="subtitle text-white px-2">
+              <span className="landingPage-star-text">
+                4.75 of 5 stars&nbsp;
+              </span>
+              with 11 000 orders
+            </p>
+            <div className="row">
+              <div className="col-md-7 d-flex flex-column justify-content-between">
+                <div className="position-relative">
+                  <CustomImage imgUrl={IMGURLS.img4_1} />
+                  <div className="position-absolute landingPage-animText1">
+                    <div className="p-3 rounded-4 bg-white">
+                      <div className="text-center">
+                        <img
+                          className="landingPage-fstars"
+                          src={IMGURLS.fstars}
+                          alt="fstars"
+                        />
+                      </div>
+                      <div className="d-flex justify-content-between">
+                        <p>
+                          <strong>Amund</strong>
+                        </p>
+                        <p>Oct 2024</p>
+                      </div>
+                      <p>Absolutely magical! So easy!</p>
+                      <p>Very nice technician!</p>
+                    </div>
                   </div>
-                  <div className="col-6 pe-0">
-                    <CustomImage imgUrl={IMGURLS.img4_3} />
+                </div>
+                <div className="mt-3">
+                  <div className="row">
+                    <div className="col-6 ps-0">
+                      <div className="landingPage-animText3 bg-white h-100 p-3 rounded-4">
+                        <div className="text-center">
+                          <img
+                            className="landingPage-fstars"
+                            src={IMGURLS.fstars}
+                            alt="fstars"
+                          />
+                        </div>
+                        <div className="d-flex justify-content-between">
+                          <p>
+                            <strong>Lucija</strong>
+                          </p>
+                          <p>Oct 2024</p>
+                        </div>
+                        <p className="text-sm">
+                          Your service is unique and absolutely brilliant in an
+                          otherwise hectic everyday life. In addition, you are
+                          always so accommodating, flexible and helpful. This
+                          makes your service truly stand out and superior.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="col-6 pe-0">
+                      <CustomImage imgUrl={IMGURLS.img4_3} />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="col-md-5 img4">
-              <CustomImage imgUrl={IMGURLS.img4_2} />
+              <div className="col-md-5 img4">
+                <div className="position-relative">
+                  <CustomImage imgUrl={IMGURLS.img4_2} />
+                  <div className="position-absolute landingPage-animText2 p-3 bg-white rounded-4">
+                    <div className="text-center">
+                      <img
+                        className="landingPage-fstars"
+                        src={IMGURLS.fstars}
+                        alt="fstars"
+                      />
+                    </div>
+                    <div className="d-flex justify-content-between">
+                      <p>
+                        <strong>Torgeir</strong>
+                      </p>
+                      <p>Oct 2024</p>
+                    </div>
+                    <p>
+                      It's not often that I actually want to recommend a service
+                      unsolicited to others, but in this case I have already
+                      done so! Very good communication and efficient execution.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

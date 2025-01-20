@@ -8,6 +8,7 @@ import ServicePage from "../pages/servicePage";
 import HelpPage from "../pages/helpPage";
 import BusinessPage from "../pages/businessPage";
 import BookingPage from "../pages/bookingPage";
+import AboutPage from "../pages/aboutPage";
 import PrivacyPage from "../pages/privacyPage";
 import TermsPage from "../pages/termsPage";
 import WorkPage from "../pages/workPage";
@@ -37,6 +38,10 @@ const ROUTES = [
   {
     Component: BookingPage,
     path: PATH.BOOKING,
+  },
+  {
+    Component: AboutPage,
+    path: PATH.ABOUT,
   },
   {
     Component: PrivacyPage,
